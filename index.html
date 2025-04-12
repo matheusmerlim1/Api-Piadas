@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke App</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+
+    <h1>Joke App</h1>
+
+    <!-- Formulário para adicionar uma piada -->
+    <form id="jokeForm">
+        <label for="category">Tema:</label>
+        <select id="category">
+            <option value="Programming">Programação</option>
+            <option value="Miscellaneous">Diversos</option>
+            <option value="Puns">Trocadilhos</option>
+            <option value="Spooky">Assustadoras</option>
+        </select>
+
+        <label for="language">Idioma:</label>
+        <select id="language">
+            <option value="en">Inglês</option>
+            <option value="pt">Português</option>
+        </select>
+
+        <label for="joke">Piada:</label>
+        <textarea id="joke" placeholder="Digite sua piada aqui..." rows="4" cols="50"></textarea>
+
+        <button type="submit">Adicionar Piada</button>
+    </form>
+
+    <!-- Seção de busca de piadas -->
+    <div id="searchSection">
+        <h2>Buscar Piadas</h2>
+
+        <label for="searchTerm">Termo para busca:</label>
+        <input type="text" id="searchTerm" placeholder="Digite a palavra chave">
+
+        <label for="searchLanguage">Idioma para busca:</label>
+        <select id="searchLanguage">
+            <option value="en">Inglês</option>
+            <option value="pt">Português</option>
+        </select>
+
+        <button id="searchButton">Buscar Piadas</button>
+    </div>
+
+    <!-- Lista de piadas -->
+    <h2>Piadas:</h2>
+    <ul id="piadas"></ul>
+
+    <script src="app.js"></script>
+</body>
+</html>

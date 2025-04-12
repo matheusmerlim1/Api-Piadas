@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-section {
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="text"], select, input[type="number"], textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#searchSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#searchSection input {
+    width: 100%;
+}
+
+#jokesList {
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.joke-rating {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.joke-rating input[type="number"] {
+    width: 60px;
+}
+
+.joke-rating button {
+    width: auto;
+    background-color: #007bff;
+}
+
+.joke-rating button:hover {
+    background-color: #0056b3;
+}
+
+.joke-category {
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+}
+
+#submitRating {
+    margin-top: 10px;
+    background-color: #007bff;
+    width: auto;
+}
+
+#submitRating:hover {
+    background-color: #0056b3;
+}
